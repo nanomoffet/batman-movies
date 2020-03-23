@@ -5,7 +5,7 @@ import {Subscription} from 'rxjs';
 @Component({
   selector: 'app-movie-image',
   templateUrl: './movie-image.component.html',
-  styleUrls: ['./movie-image.component.css']
+  styleUrls: ['./movie-image.component.scss']
 })
 export class MovieImageComponent implements OnChanges, OnDestroy {
   @Input() movieID: string;
