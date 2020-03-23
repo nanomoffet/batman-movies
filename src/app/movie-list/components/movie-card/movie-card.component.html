@@ -1,1 +1,7 @@
-<div>Card</div>
+<div class="card-container">
+  <app-movie-image [movieID]="movie.imdbID"></app-movie-image>
+  <div class="card-content">
+    <app-movie-card-header>{{movie.Title}}</app-movie-card-header>
+    <app-movie-card-body [movie]="movieDetails"></app-movie-card-body>
+  </div>
+</div>

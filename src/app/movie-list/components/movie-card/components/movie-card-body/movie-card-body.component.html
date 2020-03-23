@@ -1,1 +1,7 @@
-<p>movie-card-body works!</p>
+<div *ngIf="movie">
+  {{movie.Rated}}
+  {{movie.Runtime}}
+  {{movie.Released}}
+  {{movie.Plot}}
+  <app-movie-card-button [id]="movie.imdbID"></app-movie-card-button>
+</div>

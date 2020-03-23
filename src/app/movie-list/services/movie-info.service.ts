@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import {environment} from '../../../environments/environment';
 import {Observable} from 'rxjs';
-import {Movie} from '../../models/movie';
+import {SearchResults} from '../../models/search-results.model';
 import {HttpClient} from '@angular/common/http';
+import {MovieDetails} from '../../models/movie-details.model';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,11 @@ export class MovieInfoService {
     this.baseUrl = `http://www.omdbapi.com/?apiKey=${this.apiKey}&`;
   }
 
-  getMovieInfo(query: string): Observable<Movie> {
-    return this.http.get<Movie>(`${this.baseUrl}s=${query}`);
+  getMovieInfo(query: string): Observable<SearchResults> {
+    return this.http.get<SearchResults>(`${this.baseUrl}s=${query}`);
+  }
+
+  getMovieDetails(id: string): Observable<MovieDetails> {
+  return this.http.get<MovieDetails>(`${this.baseUrl}i=${id}&plot=full`);
   }
 }

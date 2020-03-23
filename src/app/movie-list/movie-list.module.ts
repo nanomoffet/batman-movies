@@ -5,11 +5,12 @@ import { MovieCardHeaderComponent } from './components/movie-card/components/mov
 import { MovieCardBodyComponent } from './components/movie-card/components/movie-card-body/movie-card-body.component';
 import {MovieImageComponent} from './components/movie-card/components/movie-image/movie-image.component';
 import { MovieListComponent } from './movie-list.component';
+import { MovieCardButtonComponent } from './components/movie-card/components/movie-card-button/movie-card-button.component';
 
 
 
 @NgModule({
-  declarations: [MovieCardComponent, MovieCardHeaderComponent, MovieCardBodyComponent, MovieImageComponent, MovieListComponent],
+  declarations: [MovieCardComponent, MovieCardHeaderComponent, MovieCardBodyComponent, MovieImageComponent, MovieListComponent, MovieCardButtonComponent],
   imports: [
     CommonModule
   ],

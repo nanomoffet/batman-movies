@@ -1,4 +1,4 @@
-export interface Movie {
+export interface MovieResult {
   Title: string;
   Year: string;
   imdbID: string;
