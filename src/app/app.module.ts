@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import { MovieImageComponent } from './movie-list/components/movie-card/components/movie-image/movie-image.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { PillNavComponent } from './shared/components/pill-nav/pill-nav.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MovieListModule} from './movie-list/movie-list.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { PillNavComponent } from './shared/components/pill-nav/pill-nav.componen
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule,
+    MovieListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
