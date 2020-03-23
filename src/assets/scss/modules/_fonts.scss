@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+  url('../../fonts/bold/OpenSans-Bold.woff2') format('woff2'),
+  url('../../fonts/bold/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whitney HTF Semi';
+  src: local('WhitneyHTF-SemiBold'),
+  url('../../fonts/semibold/WhitneyHTF-SemiBold.woff2') format('woff2'),
+  url('../../fonts/semibold/WhitneyHTF-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
