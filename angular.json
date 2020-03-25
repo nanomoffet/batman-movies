@@ -49,7 +49,7 @@
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -154,6 +154,14 @@
             "production": {
               "devServerTarget": "batman-movies:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/batman-movies",
+            "netlifyToken": "",
+            "siteId": "010389cd-e01b-4bf8-8732-dcd8d7d8d34e"
           }
         }
       }
