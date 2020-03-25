@@ -14,7 +14,7 @@ export class MovieInfoService {
 
   constructor(private http: HttpClient) {
     this.apiKey = environment.apiKey;
-    this.baseUrl = `http://www.omdbapi.com/?apiKey=${this.apiKey}&`;
+    this.baseUrl = `https://www.omdbapi.com/?apiKey=${this.apiKey}&`;
   }
 
   getMovieInfo(query: string): Observable<SearchResults> {

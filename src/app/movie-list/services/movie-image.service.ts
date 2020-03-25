@@ -14,7 +14,7 @@ export class MovieImageService {
 
   constructor(private http: HttpClient) {
     this.apiKey = environment.apiKey;
-    this.baseUrl = `http://img.omdbapi.com/?apiKey=${this.apiKey}&`;
+    this.baseUrl = `https://img.omdbapi.com/?apiKey=${this.apiKey}&`;
   }
 
   getMovieImage(query: string): Observable<Blob> {
