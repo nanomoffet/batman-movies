@@ -3,8 +3,8 @@ const fs = require('fs');
 const targetPath = `./src/environments/environment.${process.env.ENVIRONMENT}.ts`;
 // `environment.ts` file structure
 const envConfigFile = `export const environment = {
-   apiKey: '${process.env.APIKEY}'
-   production: '${process.env.PRODUCTION}'
+   production: '${process.env.PRODUCTION}',
+   apiKey: '${process.env.APIKEY}',
 };
 `;
 console.log('The file `environment.ts` will be written with the following content: \n');
