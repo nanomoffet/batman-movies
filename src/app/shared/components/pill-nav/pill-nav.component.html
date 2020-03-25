@@ -1,1 +1,7 @@
-<p>pill-nav works!</p>
+<div class="pill-nav-container">
+  <div *ngFor="let decade of decadesReleased"
+       class="pill-nav-item"
+       [ngClass]="{'active': selectedDecade === decade}"
+       (click)="toggleSelectedDecade(decade)"
+  >{{decade}}'s</div>
+</div>

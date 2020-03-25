@@ -6,13 +6,21 @@ import { MovieCardBodyComponent } from './components/movie-card/components/movie
 import {MovieImageComponent} from './components/movie-card/components/movie-image/movie-image.component';
 import { MovieListComponent } from './movie-list.component';
 import { MovieCardButtonComponent } from './components/movie-card/components/movie-card-button/movie-card-button.component';
+import {SharedModule} from '../shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [MovieCardComponent, MovieCardHeaderComponent, MovieCardBodyComponent, MovieImageComponent, MovieListComponent, MovieCardButtonComponent],
+  declarations: [
+    MovieCardComponent,
+    MovieCardHeaderComponent,
+    MovieCardBodyComponent,
+    MovieImageComponent,
+    MovieListComponent,
+    MovieCardButtonComponent
+  ],
   imports: [
-    CommonModule
+    SharedModule
   ],
   exports: [MovieListComponent]
 })

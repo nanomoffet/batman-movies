@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'fonts';
+
+:host {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin-left: auto;
+}
+
+.pill-nav-container {
+
+  div:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  div:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.pill-nav-item {
+  height: 36px;
+  width: 92px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $img_border_color;
+  background-color: $offwhite-background;
+  color: $gray;
+  font-family: 'Whitney HTF Semi', sans-serif;
+  font-size: $font-sm;
+  cursor: pointer;
+
+  &.active, &:focus, &:hover {
+    background: $blue;
+    color: $white;
+  }
+}

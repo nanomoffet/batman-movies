@@ -1,1 +1,5 @@
-<app-movie-card *ngFor="let movie of searchResults" [movie]="movie"></app-movie-card>
+<app-pill-nav
+  [decadesReleased]="decadesReleased"
+  (selectedDecadeChange)="filterByDecade($event)"
+></app-pill-nav>
+<app-movie-card *ngFor="let movie of filteredSearchResults" [movie]="movie"></app-movie-card>

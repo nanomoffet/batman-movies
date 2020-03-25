@@ -1,0 +1,9 @@
+@import 'variables';
+
+img {
+  height: auto;
+  max-width: 140px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid $img_border_color;
+}

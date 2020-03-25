@@ -22,6 +22,6 @@ export class MovieInfoService {
   }
 
   getMovieDetails(id: string): Observable<MovieDetails> {
-  return this.http.get<MovieDetails>(`${this.baseUrl}i=${id}&plot=full`);
+  return this.http.get<MovieDetails>(`${this.baseUrl}i=${id}`);
   }
 }

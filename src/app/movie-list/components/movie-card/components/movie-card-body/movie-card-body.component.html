@@ -1,7 +1,13 @@
-<div *ngIf="movie">
-  {{movie.Rated}}
-  {{movie.Runtime}}
-  {{movie.Released}}
-  {{movie.Plot}}
-  <app-movie-card-button [id]="movie.imdbID"></app-movie-card-button>
+<div *ngIf="movie" class="body-container">
+  <div class="movie-details">
+    <span class="movie-metadata">
+      <i class="movie-rating">{{movie.Rated}}</i>
+      {{movie.Runtime}}
+    </span>
+
+    {{movie.Released}}
+  </div>
+  <p>
+    {{movie.Plot}}
+  </p>
 </div>

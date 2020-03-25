@@ -3,5 +3,6 @@
   <div class="card-content">
     <app-movie-card-header>{{movie.Title}}</app-movie-card-header>
     <app-movie-card-body [movie]="movieDetails"></app-movie-card-body>
+    <app-movie-card-button [id]="movie.imdbID"></app-movie-card-button>
   </div>
 </div>

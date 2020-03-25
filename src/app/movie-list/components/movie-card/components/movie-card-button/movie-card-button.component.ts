@@ -3,7 +3,7 @@ import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 @Component({
   selector: 'app-movie-card-button',
   templateUrl: './movie-card-button.component.html',
-  styleUrls: ['./movie-card-button.component.css']
+  styleUrls: ['./movie-card-button.component.scss']
 })
 export class MovieCardButtonComponent implements OnChanges {
   @Input() id: string;

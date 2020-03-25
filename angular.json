@@ -29,7 +29,9 @@
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/assets/scss/modules"
+                "src/assets/scss/modules",
+                "src/assets/fonts/semibold",
+                "src/assets/fonts/bold"
               ]
             }
           },

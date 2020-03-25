@@ -1,7 +1,7 @@
 // primary font
-$primary_font: 'Helvetica, sans-serif';
-$secondary_font: 'Arial, sans-serif';
-$monospace_font: 'Courier, monospace';
+$primary_font: Helvetica, sans-serif;
+$secondary_font: Arial, sans-serif;
+$monospace_font: Courier, monospace;
 
 // font-weight
 $thin:100;
@@ -16,9 +16,17 @@ $font-sm: 14px;
 $primary-fs: 16px;
 $font-md: 18px;
 $font-lg: 20px;
+$font-xl: 24px;
 
 // colors
 $body_color: #ccc;
+$button_background: #F9B44A;
 $white: #fff;
 $black: #000;
 $border_color: #303436;
+$img_border_color: #979797;
+$hr_color: #8D989E;
+$monospace_color: #8D989D;
+$gray: #61696E;
+$blue: #1A72B0;
+$offwhite-background: #F7F8F9;

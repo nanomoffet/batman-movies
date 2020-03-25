@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+app-movie-card {
+  margin: 16px auto;
+}
+
+app-pill-nav {
+}

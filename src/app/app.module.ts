@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ButtonComponent } from './shared/components/button/button.component';
-import { PillNavComponent } from './shared/components/pill-nav/pill-nav.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MovieListModule} from './movie-list/movie-list.module';
 
@@ -12,7 +11,6 @@ import {MovieListModule} from './movie-list/movie-list.module';
   declarations: [
     AppComponent,
     ButtonComponent,
-    PillNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +19,8 @@ import {MovieListModule} from './movie-list/movie-list.module';
     MovieListModule
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,8 @@
 @import 'variables';
 
 :host {
-  display: block;
+  display: flex;
+  max-width: 700px;
   padding: 10px;
   border: 2px solid $border_color;
   border-radius: 8px;
@@ -10,4 +11,17 @@
 
 .card-container {
   display: flex;
+  flex: 1;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+app-movie-card-button {
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
 }

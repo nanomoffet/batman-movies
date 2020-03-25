@@ -1,0 +1,24 @@
+@import 'variables';
+
+:host {
+  color: $white;
+  font-weight: $bold;
+  font-size: $primary-fs;
+  font-family: $primary_font;
+  text-align: center;
+  text-decoration: none;
+
+  a {
+    border-radius: 4px;
+    background: $button_background;
+    padding: 10px 30px;
+    color: inherit;
+    text-decoration: none;
+    font-family: $primary_font;
+    transition: all ease-in-out .3s;
+
+    &:hover, &:focus, &:active {
+    background: darken($button_background, 20%);
+  }
+  }
+}
